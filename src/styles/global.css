@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Bebas+Neue&family=Bodoni+Moda:opsz@6..96&family=Caprasimo&family=Chakra+Petch:wght@300&family=Cormorant:wght@300&family=Inclusive+Sans&family=Lobster&family=Lobster+Two&family=Open+Sans:wght@300;500;700&family=Outfit:wght@300;400;600&family=Poppins:wght@100;400&family=Roboto+Slab:wght@100&family=Roboto:wght@100;400&family=Silkscreen&family=Space+Grotesk:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: #000000de; backgroundo do footer*/
+  /* color: #8080807c; input artista*/
+}

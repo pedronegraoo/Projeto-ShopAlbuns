@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "img": "https://p2.trrsf.com/image/fget/cf/1200/628/images.terra.com/2023/11/01/pepe-rodrigues-(3)-urejthx45y60.png",
+    "name": "bk",
+    "state": "Rio de Janeiro",
+    "age": 34
+  },
+  {
+    "id": 2,
+    "img": "https://conteudo.imguol.com.br/c/splash/0a/2022/06/30/filipe-ret-em-sua-festa-de-aniversario-de-37-anos-realizada-em-23-de-junho-1656609358992_v2_900x506.png",
+    "name": "filipe ret",
+    "state": "Rio de Janeiro",
+    "age": 38
+  },
+  {
+    "id": 3,
+    "img": "https://wikifavelas.com.br/images/thumb/9/96/Djonga.png/600px-Djonga.png",
+    "name": "djonga",
+    "state": "Minas Gerais",
+    "age": 29
+  },
+  {
+    "id": 4,
+    "img": "https://conteudo.imguol.com.br/c/parceiros/ba/2022/01/25/o-rapper-cearense-matue-foto-reproducao-1643149762581_v2_956x500.jpg",
+    "name": "matue",
+    "state": "Fortaleza",
+    "age": 30
+  },
+  {
+    "id": 5,
+    "img": "https://www.diariodepernambuco.com.br/static/app/noticia_127983242361/2022/04/28/892685/20220425231249112270i.jpg",
+    "name": "orochi",
+    "state": "Rio de Janeiro",
+    "age": 24
+  },
+  {
+    "id": 6,
+    "img": "https://istoe.com.br/wp-content/uploads/2023/08/mc-cabelinho2.jpg",
+    "name": "cabelinho",
+    "state": "Rio de Janeiro",
+    "age": 27
+  },
+  {
+    "id": 7,
+    "img": "https://www.lovz.com.br/wp-content/uploads/2023/04/mc-ph-os-bico-tao-se-perguntando-01-lovz.jpg",
+    "name": "mc ph",
+    "state": "São Paulo",
+    "age": 23
+  },
+  {
+    "id": 8,
+    "img": "https://s2-g1.glbimg.com/sC1E_MVq94-ykskNsTXoKL_Tfa0=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/j/9/wWbenhTWCJP4hwMMhd2g/veigh.jpg",
+    "name": "veigh",
+    "state": "São Paulo",
+    "age": 22
+  },
+  {
+    "id": 9,
+    "img": "https://www.jornaldorap.com.br/wp-content/uploads/2021/06/leall-demonike.jpg",
+    "name": "leall",
+    "state": "Rio de Janeiro",
+    "age": 21
+  },
+  {
+    "id": 10,
+    "img": "https://uploads.metropoles.com/wp-content/uploads/2022/09/01183345/11-65.jpg",
+    "name": "tz da coronel",
+    "state": "Rio de Janeiro",
+    "age": 21
+  },
+  {
+    "id": 11,
+    "img": "https://assets.folhavitoria.com.br/images/7238b100-da20-11ed-905b-292f670478c9--minified.png",
+    "name": "caio luccas",
+    "state": "Rio de Janeiro",
+    "age": 21
+  },
+  {
+    "id": 12,
+    "img": "https://marramaque.jor.br/wp-content/uploads/2023/09/vino.png",
+    "name": "yunk vino",
+    "state": "São Paulo",
+    "age": 26
+  }
+]
