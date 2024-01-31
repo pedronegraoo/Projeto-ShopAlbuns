@@ -10,7 +10,7 @@ import imgAlbum4 from "../assets/albums/albumDacoromode.jpg";
 import imgArtist1 from "../assets/artists/bk.jpg";
 import imgArtist2 from "../assets/artists/ret.jpg";
 import imgArtist3 from "../assets/artists/veigh2.jpg";
-import imgArtist4 from "../assets/artists/tzDaCoronel.jpg";
+import imgArtist4 from "../assets/artists/tz.jpg";
 
 function Home() {
   return (
