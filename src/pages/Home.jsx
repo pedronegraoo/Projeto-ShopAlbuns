@@ -7,7 +7,7 @@ import imgAlbum1 from "../assets/albums/albumGigantes.jpg";
 import imgAlbum2 from "../assets/albums/albumDosPredios.png";
 import imgAlbum3 from "../assets/albums/albumLume.jpg";
 import imgAlbum4 from "../assets/albums/albumDacoromode.jpg";
-import imgArtist1 from "../assets/artists/bk.jpg";
+import imgArtist1 from "../assets/artists/abebe.jpg";
 import imgArtist2 from "../assets/artists/ret.jpg";
 import imgArtist3 from "../assets/artists/veigh2.jpg";
 import imgArtist4 from "../assets/artists/tz.jpg";
