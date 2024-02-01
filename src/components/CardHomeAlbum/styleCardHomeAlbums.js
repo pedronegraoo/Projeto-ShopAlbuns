@@ -5,10 +5,11 @@ export const CardAlbum = styled.div`
   width: 15rem;
   height: 20rem;
 
-  /* background-color: #000000d2; */
-  /* color: #fff; */
-  background-color: #f2f1eb;
+  /* background-color: #000000d2;
+  color: #fff; */
+  /* background-color: #f2f1eb; */
   color: #000;
+  background-color: #fff;
   border-radius: 0.5rem;
 
   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */

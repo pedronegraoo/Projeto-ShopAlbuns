@@ -28,6 +28,7 @@ export const WrapperInfo = styled.div`
     padding-left: 0.4rem;
     font-size: 0.8rem;
     border: 1px solid #cccccc;
+    border-radius: none;
 
     &:focus {
       border: 1px solid #000;
