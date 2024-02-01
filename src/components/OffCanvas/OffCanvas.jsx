@@ -59,15 +59,3 @@ function OffCanvasExample({ name, ...props }) {
 }
 
 export default OffCanvasExample;
-
-// function Example() {
-//   return (
-//     <>
-//       {["start", "end", "top", "bottom"].map((placement, idx) => (
-//         <OffCanvasExample key={idx} placement={placement} name={placement} />
-//       ))}
-//     </>
-//   );
-// }
-
-// render(<Example />);

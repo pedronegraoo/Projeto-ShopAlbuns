@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../styles/responsive/breakpoints";
 
 export const CardArtist = styled.div`
   width: 15rem;
@@ -39,5 +40,11 @@ export const CardArtist = styled.div`
     letter-spacing: 2px;
 
     margin: 0;
+  }
+
+  @media ${breakpoints.bg} {
+    h2 {
+      font-size: 1.8rem;
+    }
   }
 `;

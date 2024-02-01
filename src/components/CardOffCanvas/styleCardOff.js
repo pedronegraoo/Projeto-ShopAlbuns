@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../styles/responsive/breakpoints";
 
 export const CardCarrinho = styled.div`
   width: 100%;
@@ -12,8 +13,6 @@ export const CardCarrinho = styled.div`
 
   display: flex;
   gap: 1rem;
-
-  /* position: relative; */
 
   img {
     width: 35%;
@@ -51,13 +50,12 @@ export const CardCarrinho = styled.div`
       margin: 0;
     }
   }
+
+  @media ${breakpoints.md} {
+  }
 `;
 
 export const BtnTrash = styled.button`
-  /* position: absolute;
-  top: 15px;
-  right: 15px; */
-
   color: #bbbbbb;
   border: none;
   background-color: transparent;

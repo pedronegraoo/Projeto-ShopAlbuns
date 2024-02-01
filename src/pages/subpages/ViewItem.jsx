@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import OffCanvasExample from "../../components/OffCanvas/OffCanvas";
 import ListaPlaylist from "../../components/ListPlaylist/listPlaylist";
 import FormatCurrency from "../../utils/FormatCurrency";
+import ResponsiveExample from "../../components/OffCanvas/OffCanvas";
 
 function ViewItem() {
   const { id } = useParams();
@@ -49,16 +50,20 @@ function ViewItem() {
                 </div>
                 <div>
                   <p className="price">{FormatCurrency(album.price, "BRL")}</p>
-                  <p>em até 3x de R$19,99 sem juros</p>
+                  <p className="subtitle-price">
+                    em até 3x de R$19,99 sem juros
+                  </p>
                 </div>
 
                 <div>
                   <OffCanvasExample
                     name={`comprar`}
                     placement={`end`}
+                    scroll={`false`}
                     album={album}
                   />
                 </div>
+
                 <ListaPlaylist list={album.playlist} />
               </S.WrapperInfoAlbums>
             </S.ContentViewProduct>

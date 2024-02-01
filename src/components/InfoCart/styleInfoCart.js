@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../styles/responsive/breakpoints";
 
 export const WrapperInfo = styled.div`
   height: 6rem;
@@ -20,7 +21,7 @@ export const WrapperInfo = styled.div`
   }
 
   input {
-    width: 18rem;
+    width: 12rem;
     height: 1.8rem;
     margin-right: 0.5rem;
     outline: none;
@@ -47,6 +48,14 @@ export const WrapperInfo = styled.div`
     &:hover {
       background-color: #000;
       color: #fff;
+    }
+  }
+
+  @media ${breakpoints.bg} {
+    width: 19rem;
+
+    input {
+      width: 10rem;
     }
   }
 `;

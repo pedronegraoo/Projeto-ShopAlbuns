@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../styles/responsive/breakpoints";
 
 export const Card = styled.div`
   width: 30rem;
@@ -18,6 +19,10 @@ export const Card = styled.div`
     object-fit: cover;
     border-radius: 0.5rem 0 0 0.5rem;
   }
+
+  @media ${breakpoints.md} {
+    width: 100%;
+  }
 `;
 
 export const ContentCard = styled.div`
@@ -27,7 +32,7 @@ export const ContentCard = styled.div`
 
   position: relative;
 
-  div h4 {
+  .name-album {
     font-size: 2rem;
     font-family: "Bebas Neue";
     letter-spacing: 1px;
@@ -75,6 +80,28 @@ export const ContentCard = styled.div`
       /* background-color: #a71919; */
       background-color: #3b9765;
       color: #fff;
+    }
+  }
+
+  @media ${breakpoints.sm} {
+    .name-album {
+      font-size: 1.8rem;
+      margin-bottom: 0.7rem;
+    }
+  }
+
+  @media ${breakpoints.extrasm} {
+    padding: 1.1rem 0.5rem;
+
+    .name-album {
+      margin-bottom: 0.5rem;
+    }
+
+    .buttonBuy {
+      width: 6rem;
+      height: 2.2rem;
+
+      font-size: 0.9rem;
     }
   }
 `;

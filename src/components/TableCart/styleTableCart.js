@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const DivTableCart = styled.div`
-  width: 63%;
+  /* width: 63%; */
+  width: 100%;
   font-family: "Roboto";
 
   table thead tr {
@@ -17,7 +18,8 @@ export const DivTableCart = styled.div`
   }
 
   table tr th:nth-child(1) {
-    width: 20rem;
+    /* width: 20rem; */
+    /* width: 10rem; */
     text-align: start;
   }
 
@@ -27,6 +29,7 @@ export const DivTableCart = styled.div`
   }
 
   table tr td {
+    width: 4rem;
     font-family: "Outfit";
     vertical-align: top;
     text-align: center;

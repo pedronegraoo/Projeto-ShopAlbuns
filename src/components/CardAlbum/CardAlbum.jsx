@@ -9,12 +9,12 @@ function CardAlbum({ id, img, name, artist, releaseYear, price }) {
 
       <S.ContentCard>
         <div>
-          <h4>{name}</h4>
-          <p>
+          <h4 className="name-album">{name}</h4>
+          <p className="name-artist">
             Artista: <span>{artist}</span>
           </p>
-          <p>Ano: {releaseYear}</p>
-          <p>
+          <p className="year">Ano: {releaseYear}</p>
+          <p className="price">
             <span>{FormatCurrency(price, "BRL")}</span>
           </p>
 

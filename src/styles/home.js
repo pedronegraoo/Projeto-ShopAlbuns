@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "./responsive/breakpoints";
 
 export const SectionHome = styled.section`
   height: 100%;
@@ -10,6 +11,18 @@ export const SectionHome = styled.section`
     font-family: "Roboto";
     text-align: center;
     margin-bottom: 1rem;
+  }
+
+  @media ${breakpoints.bg} {
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media ${breakpoints.md} {
+    h1 {
+      font-size: 1.6rem;
+    }
   }
 `;
 
@@ -34,6 +47,34 @@ export const ContentSection = styled.div`
     text-decoration: none;
     margin-block: 2rem;
     color: #ff1616a9;
+  }
+
+  @media ${breakpoints.bg} {
+    .titleContent {
+      font-size: 1.7rem;
+    }
+  }
+
+  @media ${breakpoints.md} {
+    .titleContent {
+      font-size: 1.5rem;
+    }
+
+    .linkAlbum,
+    .linkArtist {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media ${breakpoints.extrasm} {
+    .titleContent {
+      font-size: 1.4rem;
+    }
+
+    .linkAlbum,
+    .linkArtist {
+      font-size: 1.2rem;
+    }
   }
 `;
 

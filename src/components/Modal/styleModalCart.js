@@ -1,8 +1,8 @@
 import styled from "styled-components";
+import breakpoints from "../../styles/responsive/breakpoints";
 
 export const Section = styled.section`
   .btnModal {
-    /* width: 8.5rem; */
     width: 9rem;
     height: 2.3rem;
     background-color: #000;
@@ -18,6 +18,20 @@ export const Section = styled.section`
 
     &:hover {
       opacity: 0.8;
+    }
+  }
+
+  @media ${breakpoints.sm} {
+    .btnModal {
+      width: 8.5rem;
+      font-size: 0.7rem;
+    }
+  }
+
+  @media ${breakpoints.extrasm} {
+    .btnModal {
+      width: 8rem;
+      font-size: 0.7rem;
     }
   }
 `;

@@ -5,10 +5,9 @@ export const ContainerCards = styled.div`
   height: 100%;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   place-items: center;
   gap: 2rem;
-  /* grid-template-columns: repeat(3, 1fr); */
 
   margin-top: 2rem;
 `;

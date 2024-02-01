@@ -16,7 +16,7 @@ function Header() {
         <img src={logo} alt="logo" />
       </Link>
 
-      <nav className="navbar">
+      <S.NavBar className="navbar">
         <Link
           to="/"
           className={`navLinkPages ${pathname === "/" ? "active" : ""}`}
@@ -35,7 +35,7 @@ function Header() {
         >
           Artistas
         </Link>
-      </nav>
+      </S.NavBar>
 
       <S.WrapperWalletPerson>
         <Link to="/" className="person">

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../styles/responsive/breakpoints";
 
 export const Card = styled.div`
   width: 23rem;
@@ -19,6 +20,10 @@ export const Card = styled.div`
     object-fit: cover;
     border-radius: 0.5rem 0.5rem 0 0;
   }
+
+  @media ${breakpoints.md} {
+    width: 100%;
+  }
 `;
 
 export const ContentCard = styled.div`
@@ -30,7 +35,7 @@ export const ContentCard = styled.div`
 
   position: relative;
 
-  div h2 {
+  .name-artist {
     font-size: 2.1rem;
     font-family: "Bebas Neue";
     letter-spacing: 1px;
@@ -40,7 +45,6 @@ export const ContentCard = styled.div`
 
   div p {
     font-family: "Roboto";
-
     margin: 0;
   }
 
@@ -73,6 +77,23 @@ export const ContentCard = styled.div`
       /* background-color: #ff000070; */
       background-color: #3b9765;
       color: #fff;
+    }
+  }
+
+  @media ${breakpoints.sm} {
+    .name-artist {
+      font-size: 1.9rem;
+    }
+
+    div p {
+      font-size: 0.9rem;
+    }
+
+    .linkSaibaMais {
+      width: 5.5rem;
+      height: 2.7rem;
+
+      font-size: 1rem;
     }
   }
 `;

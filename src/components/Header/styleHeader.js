@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../styles/responsive/breakpoints";
 
 export const HeaderStyle = styled.header`
   width: 100%;
@@ -19,14 +20,26 @@ export const HeaderStyle = styled.header`
 
   .linkLogo img {
     width: 4rem;
+    object-fit: cover;
     /* width: 5%; */
     /* mix-blend-mode: color-burn; */
   }
 
-  nav {
-    display: flex;
-    gap: 1.4rem;
+  @media ${breakpoints.md} {
+    .linkLogo img {
+      width: 3rem;
+    }
   }
+
+  @media ${breakpoints.extrasm} {
+    padding: 0 2%;
+  }
+`;
+
+export const NavBar = styled.nav`
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
 
   .navLinkPages {
     font-family: "Roboto";
@@ -43,10 +56,25 @@ export const HeaderStyle = styled.header`
   .active {
     border-bottom: 1px solid #000;
   }
+
+  @media ${breakpoints.md} {
+    .navLinkPages {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media ${breakpoints.sm} {
+    gap: 1.1rem;
+
+    .navLinkPages {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const WrapperWalletPerson = styled.div`
   display: flex;
+  align-items: center;
   gap: 0.5rem;
 
   .person,
@@ -81,5 +109,22 @@ export const WrapperWalletPerson = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  @media ${breakpoints.md} {
+    .person,
+    .wallet {
+      font-size: 1.3rem;
+    }
+
+    .numberProducts {
+      top: 3px;
+      right: 4px;
+
+      width: 0.9rem;
+      height: 0.9rem;
+
+      font-size: 0.6rem;
+    }
   }
 `;

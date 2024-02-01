@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../styles/responsive/breakpoints";
 
 export const Section = styled.section`
   .btnCanvas {
@@ -18,6 +19,18 @@ export const Section = styled.section`
 
     &:hover {
       background-color: #000;
+    }
+  }
+
+  @media ${breakpoints.bg} {
+    .btnCanvas {
+      height: 3.1rem;
+    }
+  }
+
+  @media ${breakpoints.md} {
+    .btnCanvas {
+      height: 3.5rem;
     }
   }
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "./responsive/breakpoints";
 
 export const ContainerCardsAlbums = styled.div`
   width: 100%;
@@ -11,6 +12,10 @@ export const ContainerCardsAlbums = styled.div`
   gap: 3rem;
 
   margin-top: 2rem;
+
+  @media ${breakpoints.md} {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 `;
 
 export const DivTitleInput = styled.div`

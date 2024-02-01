@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../styles/responsive/breakpoints";
 
 export const CardAlbum = styled.div`
   width: 15rem;
@@ -49,8 +50,28 @@ export const CardAlbum = styled.div`
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: "Outfit";
     margin: 0;
+  }
+
+  @media ${breakpoints.bg} {
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media ${breakpoints.sm} {
+    h2 {
+      font-size: 1.7rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
   }
 `;

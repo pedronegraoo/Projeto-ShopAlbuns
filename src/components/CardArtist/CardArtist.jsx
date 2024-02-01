@@ -8,7 +8,7 @@ function CardArtist({ img, name, age, state }) {
 
       <S.ContentCard>
         <div>
-          <h2>{name}</h2>
+          <h2 className="name-artist">{name}</h2>
           <p>Idade: {age}</p>
           <p>Estado: {state}</p>
         </div>

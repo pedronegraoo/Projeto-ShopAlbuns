@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../styles/responsive/breakpoints";
 
 export const WrapperNewsletter = styled.div`
   width: 100%;
@@ -19,7 +20,39 @@ export const WrapperNewsletter = styled.div`
 
   .inputs-newsletter {
     display: flex;
+    align-items: center;
     gap: 0.5rem;
+
+    .icon-btn-newsletter {
+      display: none;
+      align-items: center;
+      justify-content: center;
+
+      width: 2rem;
+      height: 2rem;
+      border: none;
+      border-radius: 0.7rem;
+
+      font-size: 0.8rem;
+      color: #000000de;
+
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #fff;
+        background-color: #000000de;
+      }
+    }
+
+    @media ${breakpoints.bg} {
+      .btn-newsletter {
+        display: none;
+      }
+
+      .icon-btn-newsletter {
+        display: flex;
+      }
+    }
   }
 `;
 
@@ -30,10 +63,22 @@ export const InputNews = styled.input`
   padding: 0 15px;
   outline: none;
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
 
   &:focus {
     border: 1px solid #cccccc;
+  }
+
+  @media ${breakpoints.bg} {
+    width: 40%;
+  }
+
+  @media ${breakpoints.md} {
+    font-size: 0.9rem;
+  }
+
+  @media ${breakpoints.md} {
+    font-size: 0.8rem;
   }
 `;
 
@@ -42,7 +87,7 @@ export const ButtonNews = styled.button`
   width: 7rem;
   height: 2.2rem;
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   text-transform: uppercase;
 
   font-size: 0.8rem;

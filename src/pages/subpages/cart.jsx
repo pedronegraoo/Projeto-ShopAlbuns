@@ -4,6 +4,7 @@ import TableCart from "../../components/TableCart/TableCart";
 import InfoCart from "../../components/InfoCart/InfoCart";
 import ButtonCart from "../../components/ButtonCart/ButtonCart";
 import InfoValuesCart from "../../components/InfoValuesCart/InfoValuesCart";
+import TableCartMobile from "../../components/TableCartMobile/TableCartMobile";
 
 function Cart() {
   return (
@@ -14,7 +15,13 @@ function Cart() {
       </S.TitleCart>
 
       <S.SectionCart>
-        <TableCart />
+        <div className="divTableCart">
+          <TableCart />
+        </div>
+
+        <div className="divTableCartMobile">
+          <TableCartMobile />
+        </div>
 
         <S.DivInfoCart>
           <InfoCart
