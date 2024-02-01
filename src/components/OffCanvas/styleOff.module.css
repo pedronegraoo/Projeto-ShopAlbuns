@@ -1,0 +1,15 @@
+.canvas {
+  background-color: green;
+  width: 5rem;
+}
+
+@media (max-width: 560px) {
+  .canvas {
+    background-color: purple;
+    width: 1rem;
+  }
+}
+@media (max-width: 425px) {
+}
+@media (max-width: 375px) {
+}
