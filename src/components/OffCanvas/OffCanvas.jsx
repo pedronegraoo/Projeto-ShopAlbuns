@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import CardOffCanvas from "../CardOffCanvas/CardOffCanvas";
 import FormatCurrency from "../../utils/FormatCurrency";
 import useStore from "../../hooks/useStore";
+import style from "./styleOff.module.css";
 
 function OffCanvasExample({ name, ...props }) {
   const [show, setShow] = useState(false);
@@ -18,7 +19,6 @@ function OffCanvasExample({ name, ...props }) {
     <S.Section>
       <Button
         className="btnCanvas"
-        variant="primary"
         onClick={() => {
           handleShow();
           addAlbumInStore(props.album);
@@ -28,7 +28,15 @@ function OffCanvasExample({ name, ...props }) {
         {name}
       </Button>
 
-      <Offcanvas show={show} onHide={handleClose} {...props}>
+      <Offcanvas
+        show={show}
+        onHide={handleClose}
+        {...props}
+        // className={style.canvas}
+        // className={`${style.canvas} w-25`}
+        // className={`w-auto`}
+        // style={{ width: "auto" }}
+      >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Itens no carrinho</Offcanvas.Title>
         </Offcanvas.Header>
@@ -48,7 +56,7 @@ function OffCanvasExample({ name, ...props }) {
               </div>
             </S.ResumoPedido>
 
-            <Link to="/cart" className="linkCard">
+            <Link to="/cart" className="linkCart">
               Ver carrinho
             </Link>
           </S.FooterCanvas>

@@ -1,20 +1,9 @@
-.container {
-  width: 100%;
-  height: 23rem;
-  background-color: green;
-
-  overflow: hidden;
-}
-
+/* usando para ve as cores, pois no styledcomponent não da pra ve */
 .imgCarrossel {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-
-  /* color: #000000b0;
+  color: #000000b0;
   background-color: #616161d8;
   color: #ff1616a9;
   color: #ff161693;
   color: #cc202093;
-  color: #a71919; */
+  color: #a71919;
 }

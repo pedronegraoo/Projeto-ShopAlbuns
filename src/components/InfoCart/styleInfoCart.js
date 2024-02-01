@@ -37,11 +37,13 @@ export const WrapperInfo = styled.div`
   button {
     width: 4.5rem;
     height: 1.8rem;
+
     font-family: "Outfit";
     font-size: 0.8rem;
     text-transform: uppercase;
     background-color: transparent;
     border: 1px solid #000;
+    color: #000;
 
     transition: all 0.2s ease;
 
@@ -56,6 +58,24 @@ export const WrapperInfo = styled.div`
 
     input {
       width: 10rem;
+    }
+  }
+
+  @media ${breakpoints.sm} {
+    width: 100%;
+
+    div {
+      justify-content: space-between;
+    }
+
+    input {
+      width: 16rem;
+    }
+  }
+
+  @media ${breakpoints.extrasm} {
+    input {
+      width: 13rem;
     }
   }
 `;

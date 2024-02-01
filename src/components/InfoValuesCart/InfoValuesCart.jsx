@@ -25,9 +25,7 @@ function InfoValuesCart() {
         </div>
       </S.WrapperValues>
 
-      <div className="btn-finalizar-bottom">
-        <ButtonCart nameBtn={`Finalizar pedido`} />
-      </div>
+      <ButtonCart nameBtn={`Finalizar pedido`} />
     </S.WrapperFinalizar>
   );
 }

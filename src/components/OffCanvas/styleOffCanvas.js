@@ -42,25 +42,21 @@ export const WrapperContentCanvas = styled.div`
 
 export const BodyCanvas = styled.div`
   width: 100%;
-  height: 24rem;
-  padding: 1rem;
+  height: 21rem;
+  padding-inline: 1rem;
   overflow: auto;
 `;
 
 export const FooterCanvas = styled.footer`
+  /* background-color: green; */
   width: 100%;
-  height: 10rem;
+  height: 13rem;
   padding: 1rem;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-
-  .linkCard {
+  .linkCart {
     width: 100%;
     height: 3.5rem;
+    margin-top: 1rem;
 
     background-color: #3b9765;
     color: #fff;

@@ -126,7 +126,12 @@ export const WrapperInfoAlbums = styled.div`
 
 export const WrapperDescription = styled.div`
   height: 10rem;
-  font-family: "Roboto";
+
+  h4,
+  .description,
+  .year {
+    font-family: "Roboto";
+  }
 
   h4 {
     font-weight: bold;
