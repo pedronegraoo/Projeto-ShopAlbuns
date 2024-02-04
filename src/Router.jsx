@@ -5,7 +5,7 @@ import Albums from "./pages/Albums";
 import Artist from "./pages/Artist";
 import ViewItem from "./pages/subpages/ViewItem";
 import ViewAlbums from "./pages/subpages/ViewAlbums";
-import Cart from "./pages/subpages/Cart";
+import Cart from "./pages/subpages/cart";
 import RegisterUser from "./pages/subpages/RegisterUser";
 import User from "./pages/subpages/User";
 
