@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         element: <Albums />,
         // children: [
         //   {
-        //     path: ":id/viewitem",
+        //     path: ":id",
         //     element: <ViewItem />,
         //   },
         // ],
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
         element: <Artist />,
         // children: [
         //   {
-        //     path: ":id/viewalbums",
+        //     path: ":id",
         //     path: ":id",
         //     element: <ViewAlbums />,
         //   },
