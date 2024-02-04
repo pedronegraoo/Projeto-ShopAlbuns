@@ -12,13 +12,16 @@ function TableCartMobile() {
       <table>
         <tbody>
           {storeAlbum.length === 0 && (
-            <div className="emptyCart">
-              <GiShoppingCart className="imgEmptyCart" />
-              <p>Carrinho vazio</p>
-            </div>
+            <tr className="emptyCart">
+              <td>
+                <GiShoppingCart className="imgEmptyCart" />
+                <p>Carrinho vazio</p>
+              </td>
+            </tr>
           )}
+
           {storeAlbum.map((album) => (
-            <tr key={album.id}>
+            <tr key={album.id} className="tr-cards">
               <td>
                 <img
                   className="imgProduct"

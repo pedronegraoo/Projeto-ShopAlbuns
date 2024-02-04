@@ -60,15 +60,17 @@ export const DivTableCart = styled.div`
   }
 
   .emptyCart {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    td {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     .imgEmptyCart {
       font-size: 7rem;

@@ -6,16 +6,16 @@ export const WrapperTableCartMobile = styled.div`
     width: 100%;
   }
 
-  table tbody tr {
+  .tr-cards {
     display: flex;
     border-top: 1px solid #cccccc;
   }
 
-  table tbody tr td {
+  .tr-cards td {
     font-family: "Outfit";
   }
 
-  table tbody tr td:nth-child(2) {
+  .tr-cards td:nth-child(2) {
     width: 60%;
     text-transform: capitalize;
 
@@ -37,7 +37,7 @@ export const WrapperTableCartMobile = styled.div`
     }
   }
 
-  table tbody tr td:nth-child(1) {
+  .tr-cards td:nth-child(1) {
     width: 10rem;
   }
 
@@ -46,14 +46,14 @@ export const WrapperTableCartMobile = styled.div`
     object-fit: cover;
   }
 
-  table tbody tr td:nth-child(3) {
+  .tr-cards td:nth-child(3) {
     width: 2rem;
     display: flex;
     align-items: flex-start;
     justify-content: center;
   }
 
-  table tbody tr td button {
+  .tr-cards td button {
     color: #000;
     border: none;
     background-color: transparent;
@@ -64,6 +64,13 @@ export const WrapperTableCartMobile = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    td {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     .imgEmptyCart {
       font-size: 7rem;
