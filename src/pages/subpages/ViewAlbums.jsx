@@ -1,25 +1,15 @@
-import albumsDB from "../../database/albums.json";
 import * as LayoutGlobal from "../../styles/layoutArtistAlbum";
 import * as S from "../../styles/albums";
 import { useParams } from "react-router-dom";
 import CardAlbum from "../../components/CardAlbum/CardAlbum";
-import { useEffect, useState } from "react";
 import { TitleViewAlbum } from "../../styles/viewAlbums";
+import useStore from "../../hooks/useStore";
 
 export default function ViewAlbums() {
+  const { getAllAlbunsArtist } = useStore();
   const { id } = useParams();
-  const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    albumsDB.map((album) => {
-      if (id === album.artist) {
-        setProducts((state) => {
-          const newState = [...state, album];
-          return newState;
-        });
-      }
-    });
-  }, []);
+  const products = getAllAlbunsArtist(id);
 
   return (
     <LayoutGlobal.Section>

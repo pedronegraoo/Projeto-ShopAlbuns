@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const DivTableCart = styled.div`
-  /* width: 63%; */
   width: 100%;
+  height: 100%;
+
   font-family: "Roboto";
+  position: relative;
 
   table thead tr {
     border-bottom: 1px solid #cccccc;
@@ -18,13 +20,12 @@ export const DivTableCart = styled.div`
   }
 
   table tr th:nth-child(1) {
-    /* width: 20rem; */
-    /* width: 10rem; */
     text-align: start;
   }
 
   table tr th {
     width: 9rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 
@@ -56,5 +57,26 @@ export const DivTableCart = styled.div`
     color: #000;
     border: none;
     background-color: transparent;
+  }
+
+  .emptyCart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .imgEmptyCart {
+      font-size: 7rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
   }
 `;

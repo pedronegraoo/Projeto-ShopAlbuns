@@ -5,7 +5,9 @@ import Albums from "./pages/Albums";
 import Artist from "./pages/Artist";
 import ViewItem from "./pages/subpages/ViewItem";
 import ViewAlbums from "./pages/subpages/ViewAlbums";
-import Cart from "./pages/subpages/cart";
+import Cart from "./pages/subpages/Cart";
+import RegisterUser from "./pages/subpages/resgisterUser";
+import User from "./pages/subpages/User";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +50,14 @@ const router = createBrowserRouter([
       {
         path: "cart",
         element: <Cart />,
+      },
+      {
+        path: "user",
+        element: <User />,
+      },
+      {
+        path: "user/register",
+        element: <RegisterUser />,
       },
       {
         path: "/artist/:name/undefined",

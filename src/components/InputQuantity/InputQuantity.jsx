@@ -19,29 +19,24 @@ function InputQuantity({ album }) {
   return (
     <S.WrapperInputQuantity>
       <button
+        disabled={count === 1}
         onClick={() => {
           minusQuantity(album);
           setCount(album.quantity);
           totalSum();
-          // modificaValor();
         }}
       >
         <CiCircleMinus />
       </button>
 
-      <input
-        type="text"
-        disabled
-        // value={count === undefined ? 1 : album.quantity}
-        value={count < 2 ? 1 : album.quantity}
-      />
+      <input type="text" disabled value={count} />
 
       <button
+        disabled={count === 9}
         onClick={() => {
           plusQuantity(album);
           setCount(album.quantity);
           totalSum();
-          // modificaValor();
         }}
       >
         <CiCirclePlus />

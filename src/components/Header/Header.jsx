@@ -38,7 +38,7 @@ function Header() {
       </S.NavBar>
 
       <S.WrapperWalletPerson>
-        <Link to="/" className="person">
+        <Link to="user" className="person">
           <BsFillPersonFill />
         </Link>
 

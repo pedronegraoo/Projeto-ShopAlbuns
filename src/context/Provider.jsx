@@ -1,5 +1,6 @@
 import { createContext } from "react";
 import { useState } from "react";
+import albumsDB from "../database/albums.json";
 
 export const AppContext = createContext();
 
@@ -48,6 +49,14 @@ function Provider({ children }) {
     totalSum();
   }
 
+  function getAlbum(id) {
+    return albumsDB.find((album) => album.id === +id);
+  }
+
+  function getAllAlbunsArtist(id) {
+    return albumsDB.filter((album) => album.artist === id);
+  }
+
   function plusQuantity(album) {
     album.quantity += 1;
 
@@ -56,7 +65,6 @@ function Provider({ children }) {
         if (item.id === album.id) {
           item.quantity = album.quantity;
         }
-
         return item;
       });
 
@@ -73,15 +81,8 @@ function Provider({ children }) {
         if (item.id === album.id) {
           item.quantity = album.quantity;
         }
-
-        if (album.quantity < 1) {
-          album.quantity = 1;
-          item.quantity = 1;
-        }
-
         return item;
       });
-      // console.log(newState);
       localStorage.setItem("StoreAlbum", JSON.stringify(newState));
       return newState;
     });
@@ -122,6 +123,8 @@ function Provider({ children }) {
     totalSum,
     priceTotal,
     finishBuy,
+    getAlbum,
+    getAllAlbunsArtist,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

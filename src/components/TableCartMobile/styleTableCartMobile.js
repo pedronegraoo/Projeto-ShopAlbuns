@@ -59,6 +59,22 @@ export const WrapperTableCartMobile = styled.div`
     background-color: transparent;
   }
 
+  .emptyCart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .imgEmptyCart {
+      font-size: 7rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
   @media ${breakpoints.sm} {
     table tbody tr td:nth-child(2) div h5 {
       font-size: 1.2rem;
@@ -70,6 +86,17 @@ export const WrapperTableCartMobile = styled.div`
 
     table tbody tr td button {
       font-size: 0.9rem;
+    }
+
+    .emptyCart {
+      .imgEmptyCart {
+        font-size: 6rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
     }
   }
 

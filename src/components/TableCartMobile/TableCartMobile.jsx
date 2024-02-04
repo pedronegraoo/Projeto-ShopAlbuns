@@ -1,6 +1,7 @@
 import * as S from "./styleTableCartMobile";
 import FormatCurrency from "../../utils/FormatCurrency";
 import { FaRegTrashAlt } from "react-icons/fa";
+import { GiShoppingCart } from "react-icons/gi";
 import useStore from "../../hooks/useStore";
 
 function TableCartMobile() {
@@ -10,6 +11,12 @@ function TableCartMobile() {
     <S.WrapperTableCartMobile>
       <table>
         <tbody>
+          {storeAlbum.length === 0 && (
+            <div className="emptyCart">
+              <GiShoppingCart className="imgEmptyCart" />
+              <p>Carrinho vazio</p>
+            </div>
+          )}
           {storeAlbum.map((album) => (
             <tr key={album.id}>
               <td>

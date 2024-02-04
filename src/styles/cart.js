@@ -42,6 +42,10 @@ export const SectionCart = styled.section`
   @media ${breakpoints.bg} {
     flex-direction: column;
     gap: 2rem;
+
+    .divTableCart {
+      height: 25rem;
+    }
   }
 
   @media ${breakpoints.md} {
