@@ -137,7 +137,7 @@ function RegisterUser() {
           <h3>Criar conta</h3>
 
           <div className="contentForm">
-            <label htmlFor="">Nome completo</label>
+            <label htmlFor="fullName">Nome completo</label>
             <input
               ref={refName}
               type="text"
@@ -148,8 +148,7 @@ function RegisterUser() {
           </div>
 
           <div className="contentForm">
-            <label htmlFor="">E-mail</label>
-
+            <label htmlFor="email">E-mail</label>
             <input
               ref={refEmail}
               type="email"
@@ -160,7 +159,7 @@ function RegisterUser() {
           </div>
 
           <div className="contentBirthday">
-            <label htmlFor="">Data de Nascimento</label>
+            <label htmlFor="birthday">Data de Nascimento</label>
             <div className="inputsBirthday">
               <input
                 className="inputDay"
@@ -190,7 +189,7 @@ function RegisterUser() {
           </div>
 
           <div className="contentForm">
-            <label htmlFor="">Senha</label>
+            <label htmlFor="password">Senha</label>
             <input
               ref={refPassword}
               type="password"
@@ -201,7 +200,7 @@ function RegisterUser() {
           </div>
 
           <div className="contentForm">
-            <label htmlFor="">Confirma Senha</label>
+            <label htmlFor="confirmpassword">Confirma Senha</label>
             <input
               type="password"
               name="confirmpassword"

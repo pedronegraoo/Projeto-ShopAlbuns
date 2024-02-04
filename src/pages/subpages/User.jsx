@@ -16,13 +16,13 @@ function User() {
           <p>Acesse sua conta aqui</p>
 
           <div>
-            <label htmlFor="">E-mail</label>
-            <input type="email" />
+            <label htmlFor="email">E-mail</label>
+            <input type="email" id="email" name="email" />
           </div>
 
           <div>
-            <label htmlFor="">Senha</label>
-            <input type="password" />
+            <label htmlFor="password">Senha</label>
+            <input type="password" id="password" name="password" />
             <p className="messageError">Senhas distintas, tente novamente</p>
           </div>
 

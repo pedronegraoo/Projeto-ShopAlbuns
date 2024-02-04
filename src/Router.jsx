@@ -6,7 +6,7 @@ import Artist from "./pages/Artist";
 import ViewItem from "./pages/subpages/ViewItem";
 import ViewAlbums from "./pages/subpages/ViewAlbums";
 import Cart from "./pages/subpages/Cart";
-import RegisterUser from "./pages/subpages/ResgisterUser";
+import RegisterUser from "./pages/subpages/RegisterUser";
 import User from "./pages/subpages/User";
 
 const router = createBrowserRouter([
