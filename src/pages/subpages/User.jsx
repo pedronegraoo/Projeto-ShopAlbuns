@@ -1,15 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import * as LayoutGlobal from "../../styles/layoutArtistAlbum";
 import * as S from "../../styles/user";
 import { useRef, useState } from "react";
 
 function User() {
-  const refEmail = useRef(null);
-  const refPassword = useRef(null);
   const [data, setData] = useState({
     email: "",
     password: "",
   });
+  const navigate = useNavigate();
 
   function handleChange(ev) {
     const { name, value } = ev.target;
@@ -23,7 +22,7 @@ function User() {
   function handleSubmit(ev) {
     ev.preventDefault();
 
-    alert("Deu certo");
+    navigate("/");
     setData({
       email: "",
       password: "",
@@ -41,15 +40,12 @@ function User() {
         valid = true;
       } else {
         valid = false;
-        refEmail.current.style.border = "1px solid red";
         return valid;
       }
     } else {
       valid = false;
       return valid;
     }
-
-    refEmail.current.style.border = "none";
 
     if (data.password) {
       let matchPassword =
@@ -59,15 +55,12 @@ function User() {
         valid = true;
       } else {
         valid = false;
-        refPassword.current.style.border = "1px solid red";
         return valid;
       }
     } else {
       valid = false;
       return valid;
     }
-
-    refPassword.current.style.border = "none";
 
     return valid;
   }
@@ -84,7 +77,6 @@ function User() {
           <div>
             <label htmlFor="email">E-mail</label>
             <input
-              ref={refEmail}
               type="email"
               id="email"
               name="email"
@@ -96,7 +88,6 @@ function User() {
           <div>
             <label htmlFor="password">Senha</label>
             <input
-              ref={refPassword}
               type="password"
               id="password"
               name="password"

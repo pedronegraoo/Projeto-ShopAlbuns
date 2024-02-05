@@ -42,10 +42,13 @@ export const WrapperContentCanvas = styled.div`
 
 export const BodyCanvas = styled.div`
   width: 100%;
-  /* height: 21rem; */
-  height: 29rem;
+  height: 21rem;
   padding-inline: 1rem;
   overflow: auto;
+
+  @media ${breakpoints.sm} {
+    height: 29rem;
+  }
 `;
 
 export const FooterCanvas = styled.footer`

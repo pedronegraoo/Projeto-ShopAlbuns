@@ -114,6 +114,15 @@ function Provider({ children }) {
     });
   }
 
+  function descontoCupom(value) {
+    setPriceTotal((state) => {
+      const newState = (state - state * value).toFixed(2);
+      localStorage.setItem("ValueTotal", JSON.stringify(newState));
+      console.log(newState);
+      return newState;
+    });
+  }
+
   const value = {
     storeAlbum,
     addAlbumInStore,
@@ -125,6 +134,7 @@ function Provider({ children }) {
     finishBuy,
     getAlbum,
     getAllAlbunsArtist,
+    descontoCupom,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

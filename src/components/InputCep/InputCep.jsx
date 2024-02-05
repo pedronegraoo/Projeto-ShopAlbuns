@@ -1,6 +1,7 @@
-import * as S from "./styleInfoCart";
+// import * as S from "./styleInfoCart";
+import * as S from "../InputCupom/styleInputCupom";
 
-function InfoCart({ title, placeholder, nomeBtn }) {
+function InputCep({ title, placeholder, nomeBtn }) {
   return (
     <S.WrapperInfo>
       <p>{title}</p>
@@ -12,4 +13,4 @@ function InfoCart({ title, placeholder, nomeBtn }) {
   );
 }
 
-export default InfoCart;
+export default InputCep;

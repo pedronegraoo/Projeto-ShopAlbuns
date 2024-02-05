@@ -16,7 +16,7 @@ function InfoValuesCart() {
       <S.WrapperValues>
         <div>
           <p>Subtotal</p>
-          <span>R${cartTotal}</span>
+          <span>R${priceTotal}</span>
         </div>
 
         <div>
