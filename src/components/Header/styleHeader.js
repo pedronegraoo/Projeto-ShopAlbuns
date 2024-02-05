@@ -12,7 +12,8 @@ export const HeaderStyle = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  box-shadow: 0px 2px 15px #696969ab;
+  /* box-shadow: 0px 2px 15px #696969ab; */
+  box-shadow: 0px 2px 5px #696969ab;
 
   .linkLogo {
     width: 4rem;

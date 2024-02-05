@@ -1,6 +1,26 @@
 import styled from "styled-components";
 import breakpoints from "../../styles/responsive/breakpoints";
 
+export const WrapperModal = styled.div`
+  .titleModal {
+  }
+
+  .bodyModal {
+    h4 {
+    }
+
+    p {
+    }
+  }
+
+  .footerModal {
+    .btnClosed {
+      text-decoration: none;
+      color: #ff1616a9;
+    }
+  }
+`;
+
 export const Section = styled.section`
   .btnModal {
     width: 9rem;
@@ -33,12 +53,5 @@ export const Section = styled.section`
       width: 8rem;
       font-size: 0.7rem;
     }
-  }
-`;
-
-export const ModalFooter = styled.footer`
-  .btnClosed {
-    text-decoration: none;
-    color: #ff1616a9;
   }
 `;

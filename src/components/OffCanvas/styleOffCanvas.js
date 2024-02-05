@@ -42,7 +42,8 @@ export const WrapperContentCanvas = styled.div`
 
 export const BodyCanvas = styled.div`
   width: 100%;
-  height: 21rem;
+  /* height: 21rem; */
+  height: 31rem;
   padding-inline: 1rem;
   overflow: auto;
 `;

@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import * as LayoutGlobal from "../../styles/layoutArtistAlbum";
-import * as S from "../../styles/resgisterUser";
+import * as S from "../../styles/registerUser";
 import { Link } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
 
@@ -33,8 +33,8 @@ function RegisterUser() {
     ev.preventDefault();
 
     console.log(validateInputs());
-
     console.log({ inputValue });
+
     alert("Conta cadastrada com sucesso");
     setInputValue({
       fullName: "",
@@ -65,7 +65,7 @@ function RegisterUser() {
       return valid;
     }
 
-    refName.current.style.border = "1px solid #000";
+    refName.current.style.border = "1px solid none";
 
     if (inputValue.email) {
       let pattern =
@@ -83,7 +83,7 @@ function RegisterUser() {
       return valid;
     }
 
-    refEmail.current.style.border = "1px solid #000";
+    refEmail.current.style.border = "1px solid none";
 
     if (inputValue.password) {
       let matchPassword =
@@ -101,7 +101,7 @@ function RegisterUser() {
       return valid;
     }
 
-    refPassword.current.style.border = "1px solid #000";
+    refPassword.current.style.border = "none";
 
     if (inputValue.confirmpassword) {
       if (inputValue.password === inputValue.confirmpassword) {
@@ -189,7 +189,10 @@ function RegisterUser() {
           </div>
 
           <div className="contentForm">
-            <label htmlFor="password">Senha</label>
+            <div className="divLabelPassword">
+              <label htmlFor="password">Senha</label>
+              <span>Min. 8 Max. 15 </span>
+            </div>
             <input
               ref={refPassword}
               type="password"

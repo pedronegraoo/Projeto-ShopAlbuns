@@ -106,6 +106,20 @@ export const ContentTop = styled.div`
     flex-direction: column;
 
     .redesSociais a {
+      font-size: 1.3rem;
+    }
+
+    .title-footer {
+      font-size: 1.1rem;
+    }
+
+    div ul li {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* @media ${breakpoints.extrasm} {
+    .redesSociais a {
       font-size: 1.2rem;
     }
 
@@ -116,21 +130,7 @@ export const ContentTop = styled.div`
     div ul li {
       font-size: 0.8rem;
     }
-  }
-
-  @media ${breakpoints.extrasm} {
-    .redesSociais a {
-      font-size: 1.1rem;
-    }
-
-    .title-footer {
-      font-size: 0.9rem;
-    }
-
-    div ul li {
-      font-size: 0.7rem;
-    }
-  }
+  } */
 `;
 
 export const ContentBottom = styled.div`
@@ -207,12 +207,12 @@ export const ContentInfoMarca = styled.div`
 
   @media ${breakpoints.sm} {
     .content-info-marca h4 {
-      font-size: 15px;
+      font-size: 16px;
     }
 
     .content-info-marca ul li,
     .content-info-marca p {
-      font-size: 6px;
+      font-size: 7px;
     }
   }
 `;

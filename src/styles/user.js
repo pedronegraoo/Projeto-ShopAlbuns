@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "./responsive/breakpoints";
 
 export const WrapperFormUser = styled.div`
   height: 100%;
@@ -14,15 +15,16 @@ export const WrapperFormUser = styled.div`
 export const FormUser = styled.form`
   width: 30rem;
   height: 27rem;
-  padding: 2.5rem 2rem;
+  padding: 2rem;
   border-radius: 0.5rem;
+  background-color: #ebebeb;
+  /* background-color: #80808030; */
 
   display: flex;
   flex-direction: column;
   gap: 1rem;
 
   font-family: "Roboto";
-  background-color: #80808030;
 
   h3 {
     text-transform: capitalize;
@@ -30,8 +32,6 @@ export const FormUser = styled.form`
   }
 
   div {
-    /* background-color: green; */
-
     label {
       font-size: 1rem;
       margin-bottom: 0.3rem;
@@ -58,6 +58,7 @@ export const FormUser = styled.form`
   }
 
   button {
+    width: 100%;
     color: #fff;
     background-color: #000;
     border: none;
@@ -66,10 +67,15 @@ export const FormUser = styled.form`
 
     font-size: 1rem;
     text-transform: uppercase;
+    margin-top: 0.5rem;
 
     &:hover {
       opacity: 0.9;
     }
+  }
+
+  @media ${breakpoints.md} {
+    width: 100%;
   }
 `;
 
@@ -105,5 +111,9 @@ export const WrapperButtonRegister = styled.section`
     &:hover {
       opacity: 0.9;
     }
+  }
+
+  @media ${breakpoints.md} {
+    width: 100%;
   }
 `;

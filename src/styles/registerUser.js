@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const WrapperLinkBackPage = styled.div`
-  /* background-color: green; */
   margin-top: 3rem;
 
   .linkBackPage {
@@ -22,8 +21,13 @@ export const WrapperForm = styled.section`
 `;
 
 export const FormRegister = styled.form`
-  width: 23rem;
-  height: 35rem;
+  /* width: 23rem; */
+  /* height: 35rem; */
+  width: 30rem;
+  height: 37rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #ebebeb;
 
   display: flex;
   flex-direction: column;
@@ -59,6 +63,17 @@ export const FormRegister = styled.form`
       visibility: hidden;
       margin-block: 0.5rem 0;
       color: red;
+    }
+
+    .divLabelPassword {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        font-size: 0.9rem;
+        color: #3b9765;
+      }
     }
   }
 

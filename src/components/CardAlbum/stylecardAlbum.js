@@ -20,8 +20,9 @@ export const Card = styled.div`
     border-radius: 0.5rem 0 0 0.5rem;
   }
 
-  @media ${breakpoints.md} {
+  @media ${breakpoints.sm} {
     width: 100%;
+    height: 16rem;
   }
 `;
 
@@ -84,6 +85,9 @@ export const ContentCard = styled.div`
   }
 
   @media ${breakpoints.sm} {
+    /* padding: 1.1rem 0.5rem; */
+    padding: 1.1rem 0.7rem;
+
     .name-album {
       font-size: 1.8rem;
       margin-bottom: 0.7rem;
@@ -91,8 +95,6 @@ export const ContentCard = styled.div`
   }
 
   @media ${breakpoints.extrasm} {
-    padding: 1.1rem 0.5rem;
-
     .name-album {
       margin-bottom: 0.5rem;
     }

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import breakpoints from "../../styles/responsive/breakpoints";
 
-export const CardCarrinho = styled.div`
+export const CardOffCanvas = styled.div`
   width: 100%;
   height: 7rem;
   padding: 0.5rem;

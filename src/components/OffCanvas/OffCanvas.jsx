@@ -28,15 +28,7 @@ function OffCanvasExample({ name, ...props }) {
         {name}
       </Button>
 
-      <Offcanvas
-        show={show}
-        onHide={handleClose}
-        {...props}
-        // className={style.canvas}
-        // className={`${style.canvas} w-25`}
-        // className={`w-auto`}
-        // style={{ width: "auto" }}
-      >
+      <Offcanvas show={show} onHide={handleClose} {...props}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Itens no carrinho</Offcanvas.Title>
         </Offcanvas.Header>

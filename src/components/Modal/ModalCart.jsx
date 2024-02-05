@@ -10,31 +10,35 @@ function MyVerticallyCenteredModal(props) {
     <Link to="/">
       <Modal
         {...props}
-        // size="lg"
+        // size="sm"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
-            Agradecemos a sua compra!
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <h4>Confirmação de compra</h4>
-          <p>
-            Enviamos um e-mail confirmando sua compra junto com a nota fiscal.
-            Acampanhe seu e-mail pois iremos enviar o código de rastreio do(s)
-            produto(s)
-          </p>
-        </Modal.Body>
+        <S.WrapperModal>
+          <Modal.Header closeButton>
+            <Modal.Title
+              className="titleModal"
+              id="contained-modal-title-vcenter"
+            >
+              Agradecemos a sua compra!
+            </Modal.Title>
+          </Modal.Header>
 
-        <S.ModalFooter>
-          <Modal.Footer>
+          <Modal.Body className="bodyModal">
+            <h4>Confirmação de compra</h4>
+            <p>
+              Enviamos um e-mail confirmando sua compra junto com a nota fiscal.
+              Acampanhe seu e-mail pois iremos enviar o código de rastreio do(s)
+              produto(s)
+            </p>
+          </Modal.Body>
+
+          <Modal.Footer className="footerModal">
             <Link to="/" onClick={props.onHide} className="btnClosed">
               Fechar
             </Link>
           </Modal.Footer>
-        </S.ModalFooter>
+        </S.WrapperModal>
       </Modal>
     </Link>
   );

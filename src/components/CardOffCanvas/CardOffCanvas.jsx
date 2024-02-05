@@ -10,7 +10,7 @@ function CardOffCanvas() {
   return (
     <>
       {storeAlbum.map((album) => (
-        <S.CardCarrinho key={album.id}>
+        <S.CardOffCanvas key={album.id}>
           <img src={album.img} alt={`imagem do album ${album.name}`} />
 
           <div className="detailsAlbum">
@@ -32,7 +32,7 @@ function CardOffCanvas() {
               <FaRegTrashAlt />
             </S.BtnTrash>
           </div>
-        </S.CardCarrinho>
+        </S.CardOffCanvas>
       ))}
     </>
   );

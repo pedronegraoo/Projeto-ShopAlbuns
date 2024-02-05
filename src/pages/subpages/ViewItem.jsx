@@ -40,6 +40,7 @@ function ViewItem() {
                   <OffCanvasExample
                     name={`comprar`}
                     placement={`end`}
+                    scroll={true}
                     album={product}
                   />
                 </div>
