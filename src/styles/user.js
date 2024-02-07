@@ -27,6 +27,7 @@ export const FormUser = styled.form`
   font-family: "Roboto";
 
   h3 {
+    font-family: "Outfit";
     text-transform: capitalize;
     font-weight: bold;
   }
@@ -90,7 +91,8 @@ export const WrapperButtonRegister = styled.section`
   justify-content: center;
 
   p {
-    font-size: 1.2rem;
+    font-family: "Outfit";
+    font-size: 1.3rem;
     font-weight: bold;
     margin-top: 1rem;
   }

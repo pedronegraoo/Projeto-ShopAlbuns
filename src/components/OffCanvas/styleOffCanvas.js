@@ -93,7 +93,6 @@ export const ResumoPedido = styled.div`
   h6 {
     height: 50%;
     font-family: "Roboto";
-    font-weight: bold;
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #cccccc;

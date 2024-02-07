@@ -5,11 +5,14 @@ import * as S from "../styles/artist";
 import CardArtist from "../components/CardArtist/CardArtist";
 import TitlePages from "../components/Title/TitlePages";
 import InputFilterArtists from "../components/InputFilterArtist/InputFilterArtists";
+import Loading from "../components/Spinner/Spinner";
+import useStore from "../hooks/useStore";
 
 // ESTOU UTILIZANDO O useEffect e useState para treinar o uso para quando for usar uma API
 function Artist() {
   const [artists, setArtists] = useState([]);
   const [filteredArtists, setFilteredArtists] = useState([]);
+  const { uploadedImage } = useStore();
 
   useEffect(() => {
     artistsDB.sort((a, s) => {
@@ -37,6 +40,8 @@ function Artist() {
 
         {/* SEMPRE COLOCAR O PARÊNTESES DEPOIS DA ARROW FUNCTION PARA ELE RETORNAR OS VALORES */}
         <S.ContainerCards>
+          {uploadedImage && <Loading />}
+
           {filteredArtists.map((artist) => (
             <CardArtist
               key={artist.id}

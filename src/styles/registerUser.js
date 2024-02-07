@@ -36,6 +36,7 @@ export const FormRegister = styled.form`
   font-family: "Roboto";
 
   h3 {
+    font-family: "Outfit";
     text-transform: capitalize;
     font-weight: bold;
   }

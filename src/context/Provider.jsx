@@ -123,6 +123,8 @@ function Provider({ children }) {
     });
   }
 
+  const [uploadedImage, setUploadedImage] = useState(true);
+
   const value = {
     storeAlbum,
     addAlbumInStore,
@@ -135,6 +137,8 @@ function Provider({ children }) {
     getAlbum,
     getAllAlbunsArtist,
     descontoCupom,
+    uploadedImage,
+    setUploadedImage,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

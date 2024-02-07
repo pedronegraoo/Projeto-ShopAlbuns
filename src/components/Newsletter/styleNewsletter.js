@@ -93,8 +93,7 @@ export const ButtonNews = styled.button`
   font-size: 0.8rem;
   color: #000000de;
   font-weight: bold;
-  font-family: "Roboto";
-
+  font-family: "Outfit";
   transition: all 0.3s ease;
 
   &:hover {

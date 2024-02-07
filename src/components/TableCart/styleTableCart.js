@@ -24,6 +24,7 @@ export const DivTableCart = styled.div`
   }
 
   table tr th {
+    font-family: "Roboto";
     width: 9rem;
     font-size: 1.2rem;
     text-align: center;

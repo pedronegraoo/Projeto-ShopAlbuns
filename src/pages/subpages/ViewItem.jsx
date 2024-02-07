@@ -15,7 +15,7 @@ function ViewItem() {
   return (
     <>
       <LayoutGlobal.Section>
-        <S.TitleViewProduct>{`Álbuns > Produtos`}</S.TitleViewProduct>
+        <S.TitleViewProduct>{`Álbuns > Produto`}</S.TitleViewProduct>
 
         {
           <div key={product.id}>

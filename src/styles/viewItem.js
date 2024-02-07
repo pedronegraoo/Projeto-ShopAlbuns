@@ -47,6 +47,9 @@ export const WrapperInfoAlbums = styled.div`
   flex-direction: column;
 
   h2 {
+    font-family: "Outfit";
+    /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
   }
@@ -130,7 +133,7 @@ export const WrapperDescription = styled.div`
   h4,
   .description,
   .year {
-    font-family: "Roboto";
+    font-family: "Outfit";
   }
 
   h4 {

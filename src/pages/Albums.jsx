@@ -5,6 +5,7 @@ import * as LayoutGlobal from "../styles/layoutArtistAlbum";
 import * as S from "../styles/albums";
 import TitlePages from "../components/Title/TitlePages";
 import InputFilterAlbums from "../components/InputFilterAlbums/InputFilterAlbums";
+import Loading from "../components/Spinner/Spinner";
 
 // ESTOU UTILIZANDO O useEffect e useState para treinar o uso para quando for usar uma API
 function Albums() {
@@ -36,6 +37,8 @@ function Albums() {
         </S.DivTitleInput>
 
         <S.ContainerCardsAlbums>
+          {filteredAlbums.length === 0 && <Loading />}
+
           {filteredAlbums.map((album) => (
             <CardAlbum
               key={album.id}
