@@ -40,7 +40,11 @@ function Artist() {
 
         {/* SEMPRE COLOCAR O PARÊNTESES DEPOIS DA ARROW FUNCTION PARA ELE RETORNAR OS VALORES */}
         <S.ContainerCards>
-          {uploadedImage && <Loading />}
+          {/* LOADING CONSIDERANDO O CARREGAMENTO DAS IMAGENS */}
+          {/* {uploadedImage && <Loading />} */}
+
+          {/* LOADING CONSIDERANDO O CARREGAMENTO DOS ITENS */}
+          {filteredArtists.length === 0 && <Loading />}
 
           {filteredArtists.map((artist) => (
             <CardArtist
