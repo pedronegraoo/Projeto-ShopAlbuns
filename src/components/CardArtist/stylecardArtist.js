@@ -4,21 +4,20 @@ import breakpoints from "../../styles/responsive/breakpoints";
 export const Card = styled.div`
   width: 23rem;
   height: 20rem;
-  border-radius: 0.5rem;
 
   background-color: #000000d2;
   /* background-color: #000000b0; */
   color: white;
-
+  border-radius: 0.5rem;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+  overflow: hidden;
 
   img {
     width: 100%;
     height: 50%;
-
     object-fit: cover;
-    border-radius: 0.5rem 0.5rem 0 0;
   }
 
   @media ${breakpoints.md} {

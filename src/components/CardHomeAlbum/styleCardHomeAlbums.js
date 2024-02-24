@@ -23,9 +23,7 @@ export const CardAlbum = styled.div`
   img {
     width: 100%;
     height: 70%;
-
     object-fit: cover;
-    border-radius: 0.5rem 0.5rem 0 0;
 
     transition: all 0.3s ease;
 

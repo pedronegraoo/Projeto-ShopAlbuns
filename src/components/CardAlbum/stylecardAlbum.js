@@ -6,18 +6,17 @@ export const Card = styled.div`
   /* width: 24rem; */
   height: 15rem;
 
-  display: flex;
-
   border-radius: 0.5rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -50px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -90px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
+  display: flex;
+  overflow: hidden;
+
   img {
     width: 50%;
-
     object-fit: cover;
-    border-radius: 0.5rem 0 0 0.5rem;
   }
 
   @media ${breakpoints.sm} {
