@@ -1,6 +1,6 @@
+import albumsDB from "../database/albums.json";
 import { createContext } from "react";
 import { useState } from "react";
-import albumsDB from "../database/albums.json";
 
 export const AppContext = createContext();
 
@@ -18,6 +18,9 @@ function Provider({ children }) {
     if (!storePrice) return [];
     return JSON.parse(storePrice);
   });
+
+  const [uploadedImage, setUploadedImage] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   function addAlbumInStore(album) {
     const store = album;
@@ -123,7 +126,23 @@ function Provider({ children }) {
     });
   }
 
-  const [uploadedImage, setUploadedImage] = useState(true);
+  function scrollTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setVisible(true);
+    } else if (scrolled <= 300) {
+      setVisible(false);
+    }
+  };
+
+  window.addEventListener("scroll", toggleVisible);
 
   const value = {
     storeAlbum,
@@ -139,6 +158,9 @@ function Provider({ children }) {
     descontoCupom,
     uploadedImage,
     setUploadedImage,
+    scrollTop,
+    visible,
+    setVisible,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
