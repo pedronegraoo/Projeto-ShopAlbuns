@@ -38,7 +38,6 @@ function Artist() {
           />
         </S.DivTitleInput>
 
-        {/* SEMPRE COLOCAR O PARÊNTESES DEPOIS DA ARROW FUNCTION PARA ELE RETORNAR OS VALORES */}
         <S.ContainerCards>
           {/* LOADING CONSIDERANDO O CARREGAMENTO DAS IMAGENS */}
           {/* {uploadedImage && <Loading />} */}

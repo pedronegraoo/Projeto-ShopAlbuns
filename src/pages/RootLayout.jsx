@@ -4,6 +4,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import Provider from "../context/Provider";
+import BtnToTop from "../components/ButtonToTop/BtnToTop";
 
 function RootLayout() {
   return (
@@ -12,6 +13,7 @@ function RootLayout() {
 
       <S.Section>
         <ScrollToTop />
+        <BtnToTop />
         <Outlet />
       </S.Section>
 
