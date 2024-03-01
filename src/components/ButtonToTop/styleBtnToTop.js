@@ -21,6 +21,10 @@ export const BtnTop = styled.button`
 
   transition: all 0.2s ease;
 
+  .iconBtnToTop {
+    color: #000;
+  }
+
   &:hover {
     scale: 1.05;
   }

@@ -11,7 +11,7 @@ function BtnToTop() {
       className="wrapperBackToTop"
     >
       <S.BtnTop onClick={scrollTop}>
-        <IoIosArrowUp />
+        <IoIosArrowUp className='iconBtnToTop' />
       </S.BtnTop>
     </div>
   );
