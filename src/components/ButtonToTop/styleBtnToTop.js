@@ -7,6 +7,7 @@ export const BtnTop = styled.button`
   border: none;
   border-radius: 50%;
   background-color: #ccc;
+  color: #000;
   font-size: 1.5rem;
 
   position: fixed;
